@@ -22,10 +22,11 @@ def extract_cost_sensitiveness(s):
     return parts[4] if len(parts) > 5 else ''
 
 
+project_path = '..//ACUME//ACUME//'
 # Read the CSV file into a DataFrame
 project_list = {'acume_avro', 'acume_bookkeeper'}
 for project in project_list:
-    df = pd.read_csv(project + '.csv')
+    df = pd.read_csv(project_path + project + '.csv')
 
     # Compute the lengths new columns
     df['Classifier'] = df['Filename'].apply(extract_classifier)
