@@ -22,7 +22,7 @@ def extract_cost_sensitiveness(s):
     return parts[4] if len(parts) > 5 else ''
 
 
-project_path = '..//ACUME//ACUME//'
+project_path = '..//..//ACUME//ACUME//'
 # Read the CSV file into a DataFrame
 project_list = {'acume_avro', 'acume_bookkeeper'}
 for project in project_list:
