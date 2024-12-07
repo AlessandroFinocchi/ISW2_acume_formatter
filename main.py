@@ -24,7 +24,7 @@ def extract_cost_sensitiveness(s):
 
 project_path = '..//..//ACUME//ACUME//'
 # Read the CSV file into a DataFrame
-project_list = {'acume_bookkeeper'}
+project_list = {'acume_bookkeeper_nfr', 'acume_avro_nfr', 'acume_bookkeeper_yfr', 'acume_avro_yfr'}
 for project in project_list:
     df = pd.read_csv(project_path + project + '.csv')
 
